@@ -4,7 +4,7 @@ import time
 from googleapiclient.discovery import build
 
 
-API_KEY = "API"
+API_KEY = "AIzaSyCA-iZzZ2RFNon1AlkqkXazr1igePUWH3k"
 
 youtube = build("youtube", "v3", developerKey=API_KEY)
 MAX_RESULTS = 50  
@@ -101,12 +101,12 @@ def scrape_videos_for_topic(topic, max_videos=1000):
 
 if __name__ == "__main__":
     topics = [
-        "Introduction to Python",
-        "Data Structures",
-        "Object Oriented Programming",
-        "Machine Learning",
-        "Deep Learning",
-        "Natural Language Processing",
+        # "Introduction to Python",
+        # "Data Structures",
+        # "Object Oriented Programming",
+        # "Machine Learning",
+        # "Deep Learning",
+        # "Natural Language Processing",
         "Computer Vision",
         "Data Science",
         "Flask",
