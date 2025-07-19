@@ -4,7 +4,7 @@ import time
 from googleapiclient.discovery import build
 
 
-API_KEY = "AIzaSyCA-iZzZ2RFNon1AlkqkXazr1igePUWH3k"
+API_KEY = "API"
 
 youtube = build("youtube", "v3", developerKey=API_KEY)
 MAX_RESULTS = 50  
