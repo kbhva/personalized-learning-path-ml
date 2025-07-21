@@ -89,8 +89,8 @@ def get_learning_path():
             X_topic = topic_resources[['length', 'difficulty_encoded', 'type_encoded', 'popularity', 'rating']]
             topic_resources = topic_resources.copy()
             topic_resources['predicted_score'] = ranker_model.predict(X_topic)
-            top_resources = topic_resources.sort_values(by='predicted_score', ascending=False).head(3)
-            recommended = top_resources[['title', 'url', 'predicted_score']].to_dict(orient='records')
+            topic_resources = topic_resources.sort_values(by='predicted_score', ascending=False).head(20)
+            recommended = topic_resources[['title', 'url', 'predicted_score']].to_dict(orient='records')
 
             response.append({
                 "topic": topic,
@@ -103,7 +103,6 @@ def get_learning_path():
         return jsonify({"error": f"No path found between {known_topic} and {goal_topic}."}), 404
     except nx.NodeNotFound as e:
         return jsonify({"error": str(e)}), 404
-
 
 if __name__ == "__main__":
     app.run(debug=True)
