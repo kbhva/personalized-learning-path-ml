@@ -13,4 +13,6 @@ xgboost
 joblib
 numpy
 gunicorn
+torch
+transformers
 
