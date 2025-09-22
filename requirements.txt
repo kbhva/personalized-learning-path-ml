@@ -15,4 +15,5 @@ numpy
 gunicorn
 torch
 transformers
+sentence-transformers
 
