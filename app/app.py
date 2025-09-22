@@ -31,7 +31,7 @@ prerequisites = [
 ]
 G.add_edges_from((src.lower().strip(), tgt.lower().strip()) for src, tgt in prerequisites)
 
-resources_path = '../datasets/resources_with_embeddings.csv'
+resources_path = 'datasets/resources_with_embeddings.csv'
 resources_df = pd.read_csv(resources_path)
 resources_df['topic'] = resources_df['topic'].str.strip().str.lower()
 difficulty_map = {'easy': 1, 'medium': 2, 'hard': 3}
