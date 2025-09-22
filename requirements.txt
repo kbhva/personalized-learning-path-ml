@@ -4,3 +4,12 @@ pandas
 scikit-learn
 matplotlib
 jupyter
+streamlit
+flask
+flask-cors
+requests
+scikit-learn
+xgboost
+joblib
+numpy
+
